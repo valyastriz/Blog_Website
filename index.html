@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Blog Post</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/form.css">
 </head>
 
@@ -18,10 +19,15 @@
             <div id="blogImgContainer">
                 <img src="assets/blogimg.png" alt="Image of wooden letter tiles that spell Blog Post" id="blogPostTiles">
             </div>
-            <div class="blogFormContainer">
-                
+            <form id="blogFormContainer">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="title">Title:</label><br>
+                <input type="text" name="title" id="title" required><br><br>
+                <label for="content">Content:</label><br>
+                <input type="content" name="content" id="content" required><br>
 
-            </div>
+            </form>
             
 
         </section>
