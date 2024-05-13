@@ -1,7 +1,7 @@
 .doubleLine {
     display: flex;
     border: none;
-    min-height: 5rem;
+    min-height: 4.5rem;
     border-bottom: 5px double #000; 
     font-weight: bold;
 }
@@ -36,4 +36,12 @@
 
 #username, #title, #content {
     width: 100%;
+}
+
+#content {
+    /*set minimum height of container to 60% of viewport height*/
+    min-height: 60vh; 
+    overflow-y: auto; 
+    padding: 8px;
+    resize: vertical;
 }
