@@ -1,5 +1,5 @@
 .doubleLine {
-    display: flex;
+    display: block;
     border: none;
     min-height: 4.5rem;
     border-bottom: 5px double #000; 
@@ -8,7 +8,6 @@
 
 .blogImgAndForm {
     display: block;
-
 }
 
 #blogImgContainer {
@@ -44,4 +43,44 @@
     overflow-y: auto; 
     padding: 8px;
     resize: vertical;
+}
+
+
+@media screen and (min-width: 701px) {
+
+    .blogImgAndForm {
+        display: flex;
+    }
+
+    #blogImgContainer {
+        flex: 1;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogImgContainer {
+        max-width: 50%;
+        height: auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        border-right: 5px double #000; 
+        font-weight: bold;
+    }
+
+    #blogPostTiles {
+        max-width: 80%;
+        height: auto;
+    }
+    
+    #blogFormContainer {
+        flex: 1;
+    }
+
+    #content {
+        /*set minimum height of container to 60% of viewport height*/
+        min-height: 70vh; 
+    }
 }
