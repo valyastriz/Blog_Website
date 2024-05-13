@@ -3,12 +3,13 @@
     font-size: 15px;
 }
 
-.doubleLine {
+header {
     display: block;
-    border: none;
+    margin: 0;
+    padding: 0;
     min-height: 4.5rem;
+    border: none;
     border-bottom: 5px double #000; 
-    font-weight: bold;
 }
 
 .light-mode {
@@ -34,4 +35,6 @@
 .modeToggle {
     margin: 0;
     padding: 0;
+    border: none;
+    background-color: transparent;
 }

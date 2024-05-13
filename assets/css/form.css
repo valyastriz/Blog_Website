@@ -39,6 +39,12 @@
     resize: vertical;
 }
 
+#postbtn {
+    width: 100%;
+    background-color: tan;
+    padding: 3px 15px 3px 15px;
+    border-radius: 5px;
+}
 
 @media screen and (min-width: 701px) {
 
