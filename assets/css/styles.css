@@ -1,5 +1,37 @@
 * {
     font-family: Verdana, Arial, sans-serif;
-    background-color: #f3f2f1;
     font-size: 15px;
+}
+
+.doubleLine {
+    display: block;
+    border: none;
+    min-height: 4.5rem;
+    border-bottom: 5px double #000; 
+    font-weight: bold;
+}
+
+.light-mode {
+    background-color: #f3f2f1;
+    color: black;
+}
+
+.dark-mode {
+    background-color: rgb(39, 38, 38);
+    color: #f3f2f1;
+}
+
+#sunIcon, #moonIcon {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 24px; 
+    border: none;
+    background-color: none;
+}
+
+.modeToggle {
+    margin: 0;
+    padding: 0;
 }
