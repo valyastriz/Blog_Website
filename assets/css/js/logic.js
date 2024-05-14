@@ -5,7 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const moonIcon = document.getElementById('moonIcon');
     const headerBorder = document.getElementById('lightBorderHeader')
 
-
+    //check for current setting of light/dark
+    const currentMode = localStorage.getItem('mode');
+    if (mode) {
+        body.classList.add('mode');
+        if (mode === 'lightMode') {
+            sunIcon.style.display = 'inline-block';
+            moonIcon.style.display = 'none';
+            headerBorder.classList.add('lightBorderHeader');
+        }
+        else if (mode === 'darkMode') {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline-blockinline-block';
+            headerBorder.classList.add('darkBorderHeader');
+        }
+    
+    }
 
     // onlick
     //if sunIcon is clicked, set body to darkmode, make sun invisible and make noon vivisbl
@@ -19,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // //change border colors
         headerBorder.classList.remove('lightBorderHeader');
         headerBorder.classList.add('darkBorderHeader');
+        localStorage.setItem('mode', 'lightMode');
     });
 
     moonIcon.addEventListener('click', () => {
@@ -31,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // //change border colors
         headerBorder.id.remove('darkHeaderBorder');
         headerBorder.id.add('lightHeaderBorder');
-
+        localStorage.setItem('mode', 'darkMode');
     });
 
 
