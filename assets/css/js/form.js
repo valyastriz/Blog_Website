@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+
+    //check for current light/dark mode setting and set it up
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get('mode') || localStorage.getItem('mode') || 'lightMode';
+
     document.getElementById('blogFormContainer').addEventListener('submit', function(event) {
-        event.preventDefault();//prevent auto form submission since we're using local storage instead
+    event.preventDefault();//prevent auto form submission since we're using local storage instead
     
     
     //gather info from the form 

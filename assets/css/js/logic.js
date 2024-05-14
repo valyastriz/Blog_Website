@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     const sunIcon = document.getElementById('sunIcon');
     const moonIcon = document.getElementById('moonIcon');
-    const headerBorder = document.getElementById('lightBorderHeader')
 
     //check for current setting of light/dark
     let currentMode = localStorage.getItem('mode');
@@ -13,10 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         currentMode = 'lightMode';
     }
     if (currentMode === 'lightMode') {
+        body.classList.remove('darkMode');
+        body.classList.add('lightMode');
         sunIcon.style.display = 'inline-block';
         moonIcon.style.display = 'none';
     }
     else if (currentMode === 'darkMode') {
+        body.classList.remove('lightMode');
+        body.classList.add('darkMode');
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'inline-block';
     }
@@ -24,23 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // onlick
     //if sunIcon is clicked, set body to darkmode, make sun invisible and make noon vivisbl
     sunIcon.addEventListener('click', () => {
-        //change the light/dark mode
-        body.classList.remove('lightMode');
-        body.classList.add('darkMode');
-        //change sun/moon
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'inline-block';
-        localStorage.setItem('mode', 'lightMode');
+        //update mode and refer to correct url page for that mode
+        localStorage.setItem('mode', 'darkMode');
+        window.location.href = 'index.html?mode=darkMode';
     });
 
     moonIcon.addEventListener('click', () => {
-        //change the light/dark mode
-        body.classList.remove('darkMode');
-        body.classList.add('lightMode');
-        //change sun/moon
-        sunIcon.style.display = 'inline-block';
-        moonIcon.style.display = 'none';
-        localStorage.setItem('mode', 'darkMode');
+        //update mode and refer to correct url page for that mode
+        localStorage.setItem('mode', 'lightMode');
+        window.location.href = 'index.html?mode=lightMode';
     });
 
 });
+

@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     
+    // check for current light/dark mode setting and set it up
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get('mode') || localStorage.getItem('mode') || 'lightMode';
+
     //iterate over all the objects in local storage
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
