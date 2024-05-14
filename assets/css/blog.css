@@ -1,3 +1,22 @@
+#backArrow img {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width: 24px; /* Set the width */
+    height: 24px; /* Set the height */
+}
+
+#backArrow {
+    position: absolute;
+    right: 60px;
+    bottom: 8px;
+    width: 26px; /* Set the width */
+    height: 26px;
+    border: none;
+    background-color: transparent;
+}
+
 main {
     min-height: 85vh;
 }
@@ -16,7 +35,7 @@ main {
     margin: 0 0 5px 0;
     font-size: large;
 }
-.horisontalLine {
+.horizontalLine {
     border: none;
     height: 2px;
     background-color: #000; 
@@ -40,16 +59,13 @@ footer {
     min-height: 4.5rem;
     border: none;
     border-top: 5px double #000; 
-}
-
-footer {
     padding: 0.5em;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
     align-items: center;
-  }
+}
 
 .contactinfoot h4 {
     color: #080808;
