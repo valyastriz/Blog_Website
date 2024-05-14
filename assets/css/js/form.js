@@ -12,8 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         formDataObject[key]= value;
     }
     
+
+    //generate unique key for each post using timestamp
+    const timestamp = Date.now();
+    const key = `formData_${timestamp}`;
+
     //storing the formdata in local storage
-    localStorage.setItem('formData', JSON.stringify(formDataObject));
+    localStorage.setItem(key, JSON.stringify(formDataObject));
     
     //redirecting the user to the bloposts page
     window.location.href = 'blog.html';

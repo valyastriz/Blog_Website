@@ -35,20 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    //if moon is clicked, set body to lightmode, make moon invivisbl and make sun visible 
-
-
-    // function toggleMode() {
-    //     if (checkScreenMode === 'light') {
-            
-    //     }
-    //     document.body.classList.toggle('lightMode');
-    //     document.body.classList.toggle('darkMode');
-    //     sunIcon.style.display = sunIcon.style.display === 'none' ? 'inline-block' : 'none';
-    //     moonIcon.style.display = moonIcon.style.display === 'none' ? 'inline-block' : 'none';
-    // }
-
-});
 
 
 
