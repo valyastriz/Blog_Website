@@ -2,7 +2,35 @@ main {
     min-height: 85vh;
 }
 
+.posted {
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 95%;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
+.blogTitle {
+    margin: 0 0 5px 0;
+    font-size: large;
+}
+.horisontalLine {
+    border: none;
+    height: 2px;
+    background-color: #000; 
+    margin: 0 0px 10px 0px;
+}
+
+.posted .blogContent {
+    padding: 10px;
+}
+
+.posted .author {
+    margin: 20px 0 0 0;
+    font-size: smaller;
+}
 
 footer {
     display: block;
