@@ -6,20 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerBorder = document.getElementById('lightBorderHeader')
 
     //check for current setting of light/dark
-    const currentMode = localStorage.getItem('mode');
-    if (mode) {
-        body.classList.add('mode');
-        if (mode === 'lightMode') {
-            sunIcon.style.display = 'inline-block';
-            moonIcon.style.display = 'none';
-            headerBorder.classList.add('lightBorderHeader');
-        }
-        else if (mode === 'darkMode') {
-            sunIcon.style.display = 'none';
-            moonIcon.style.display = 'inline-blockinline-block';
-            headerBorder.classList.add('darkBorderHeader');
-        }
-    
+    let currentMode = localStorage.getItem('mode');
+    //check if currentMode is empty and set to default
+    if(!currentMode) {
+        localStorage.setItem('mode', 'lightMode');
+        currentMode = 'lightMode';
+    }
+    if (currentMode === 'lightMode') {
+        sunIcon.style.display = 'inline-block';
+        moonIcon.style.display = 'none';
+    }
+    else if (currentMode === 'darkMode') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline-block';
     }
 
     // onlick
@@ -31,9 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //change sun/moon
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'inline-block';
-        // //change border colors
-        headerBorder.classList.remove('lightBorderHeader');
-        headerBorder.classList.add('darkBorderHeader');
         localStorage.setItem('mode', 'lightMode');
     });
 
@@ -44,13 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //change sun/moon
         sunIcon.style.display = 'inline-block';
         moonIcon.style.display = 'none';
-        // //change border colors
-        headerBorder.id.remove('darkHeaderBorder');
-        headerBorder.id.add('lightHeaderBorder');
         localStorage.setItem('mode', 'darkMode');
     });
 
-
-
-
-
+});

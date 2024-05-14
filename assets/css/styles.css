@@ -53,7 +53,7 @@
     font-size: 24px; 
     background-color: transparent;
     border: none;
-    display: none;
+    display: inline-block;
 }
 
 .modeToggle {
