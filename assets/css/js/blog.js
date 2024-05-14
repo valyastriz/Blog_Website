@@ -1,4 +1,4 @@
-//get data from form from local storage
+//get data from form from local storage and apply styling
 const formData = JSON.parse(localStorage.getItem('formData'));
 
 const posted = document.createElement('article');
@@ -18,3 +18,18 @@ content.classList.add('blogContent');
 const author = document.createElement('p');
 author.textContent = `${formData.username}`;
 content.classList.add('author');
+
+
+
+//appending new elements to the new article section
+posted.appendChild(title);
+posted.appendChild(hr);
+posted.appendChild(content);
+posted.appendChild(author);
+
+//appened article section to blog page 
+//create reference to main
+const main = document.querySelector('main');
+
+//insert new article section at TOP of the page
+main.insertBefore(posted, main.firstChild);
