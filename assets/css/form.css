@@ -21,6 +21,17 @@
     position: relative;
 }
 
+.lightMode input[type='text'],
+.lightMode textarea {
+    background-color: rgb(252, 252, 245);
+    color:#000;
+}
+
+.darkMode input[type='text'], 
+.darkMode textarea {
+    background-color: #737171;
+    color:beige;
+}
 #blogFormContainer {
     display: block;
     position: relative;

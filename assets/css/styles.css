@@ -5,12 +5,28 @@
 }
 
 header {
+    
+}
+
+#lightBorderHeader {
     display: block;
     margin: 0;
     padding: 0;
     min-height: 4.5rem;
     border: none;
     border-bottom: 5px double #000; 
+
+    position: relative;
+}
+
+#darkBorderHeader {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 4.5rem;
+    border: none;
+    border-bottom: 5px double #f3f2f1; 
+    border-color: #f3f2f1;
     position: relative;
 }
 
@@ -20,7 +36,7 @@ header {
 }
 
 .darkMode {
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(89, 87, 87);
     color: #f3f2f1;
 }
 
