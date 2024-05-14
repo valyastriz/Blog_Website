@@ -1,0 +1,33 @@
+main {
+    min-height: 85vh;
+}
+
+
+
+footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 4.5rem;
+    border: none;
+    border-top: 5px double #000; 
+}
+
+footer {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    align-items: center;
+  }
+
+.contactinfoot h4 {
+    color: #080808;
+  }
+
+  .footnav li a {
+    color: #32444a;
+  }
+

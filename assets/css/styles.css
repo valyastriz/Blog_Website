@@ -1,6 +1,7 @@
 * {
     font-family: Verdana, Arial, sans-serif;
     font-size: 15px;
+    position: relative;
 }
 
 header {
@@ -10,26 +11,39 @@ header {
     min-height: 4.5rem;
     border: none;
     border-bottom: 5px double #000; 
+    position: relative;
 }
 
-.light-mode {
+.lightMode {
     background-color: #f3f2f1;
     color: black;
 }
 
-.dark-mode {
+.darkMode {
     background-color: rgb(39, 38, 38);
     color: #f3f2f1;
 }
 
-#sunIcon, #moonIcon {
+#sunIcon {
     position: absolute;
     top: 1.8rem;
     right: 1rem;
     cursor: pointer;
     font-size: 24px; 
+    background-color: transparent;
     border: none;
-    background-color: none;
+    display: inline-block;
+}
+
+#moonIcon {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 24px; 
+    background-color: transparent;
+    border: none;
+    display: none;
 }
 
 .modeToggle {

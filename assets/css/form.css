@@ -8,6 +8,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    padding: 1rem;
 }
 
 #blogPostTiles {
