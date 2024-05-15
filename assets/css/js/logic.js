@@ -27,15 +27,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // onlick
     //if sunIcon is clicked, set body to darkmode, make sun invisible and make noon vivisbl
     sunIcon.addEventListener('click', () => {
-        //update mode and refer to correct url page for that mode
-        localStorage.setItem('mode', 'darkMode');
-        window.location.href = 'index.html?mode=darkMode';
+        if (window.location.href.includes('index')) {
+            //update mode and refer to correct url page for that mode
+            localStorage.setItem('mode', 'darkMode');
+            window.location.href = 'index.html?mode=darkMode';
+        }
+        else {
+            localStorage.setItem('mode', 'darkMode');
+            window.location.href = 'blog.html?mode=darkMode';
+        }
     });
 
+
     moonIcon.addEventListener('click', () => {
-        //update mode and refer to correct url page for that mode
-        localStorage.setItem('mode', 'lightMode');
-        window.location.href = 'index.html?mode=lightMode';
+        if (window.location.href.includes('index')) {
+            //update mode and refer to correct url page for that mode
+            localStorage.setItem('mode', 'lightMode');
+            window.location.href = 'index.html?mode=lightMode';
+        }
+        else {
+            localStorage.setItem('mode', 'lightMode');
+            window.location.href = 'blog.html?mode=lightMode';
+        }
     });
 
 });
