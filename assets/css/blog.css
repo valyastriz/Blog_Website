@@ -65,15 +65,12 @@ footer {
     flex-direction: column;
     text-align: center;
     position: relative;
-    align-items: center;
 }
 
-.contactinfoot h4 {
-    color: #080808;
-  }
 
-.footnav li a {
-color: #0f0f10;
+.footnav {
+text-align: left;
+line-height: 1.5rem;
 }
 
 
