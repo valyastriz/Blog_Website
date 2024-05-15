@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const author = document.createElement('p');
             author.textContent = `${formData.username}`;
-            content.classList.add('author');
+            author.classList.add('author');
 
             //appending new elements to the new article section
             posted.appendChild(title);

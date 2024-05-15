@@ -42,13 +42,14 @@ main {
     margin: 0 0px 10px 0px;
 }
 
-.posted .blogContent {
+.blogContent {
     padding: 10px;
+    font-size: 1rem;
 }
 
-.posted .author {
+.author {
     margin: 20px 0 0 0;
-    font-size: smaller;
+    font-size: 0.75rem;
 }
 
 footer {
@@ -71,7 +72,9 @@ footer {
     color: #080808;
   }
 
-  .footnav li a {
-    color: #32444a;
-  }
+.footnav li a {
+color: #0f0f10;
+}
+
+
 
