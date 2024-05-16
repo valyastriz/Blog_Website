@@ -71,6 +71,7 @@ footer {
 .footnav {
 text-align: left;
 line-height: 1.5rem;
+font-weight: bold;
 }
 
 .blogArea {
@@ -84,7 +85,7 @@ line-height: 1.5rem;
 .blog-card {
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
     max-width: 100%;
     min-width: 20%;
     display: flex;
@@ -103,8 +104,4 @@ line-height: 1.5rem;
 .blog-card .content {
     padding: 1rem 0 1rem 1rem;
     font-size: 1rem;
-}
-
-.blog-card hr {
-
 }
