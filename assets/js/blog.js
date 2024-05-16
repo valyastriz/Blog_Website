@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         blogCard += `
         <div class="blog-card">
         <h2>${articles[i].title}</h2>
-        <p>${articles[i].content}</p>
+        <hr>
+        <p class="content">${articles[i].content}</p>
         <p>${articles[i].username}</p>
         </div>
         `
