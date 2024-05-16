@@ -67,13 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // }
 
 
-    //make back arrow link to html page
-    // const backArrow = document.getElementById('backArrow');
-    // backArrow.addEventListener('click', function() {
-    //     window.location.href = 'index.html';
-    // })
+    // make back arrow link to html page
+    const backArrow = document.getElementById('backArrow');
+    backArrow.addEventListener('click', function(event) {
+        event.stopPropagation();
+        window.location.href = 'index.html';
+    })
 
     
+
 });
 
 
