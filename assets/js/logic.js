@@ -24,31 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {
         moonIcon.style.display = 'inline-block';
     }
 
-    // onlick
-    //if sunIcon is clicked, set body to darkmode, make sun invisible and make noon vivisbl
-    sunIcon.addEventListener('click', () => {
-        if (window.location.href.includes('index')) {
-            //update mode and refer to correct url page for that mode
-            localStorage.setItem('mode', 'darkMode');
-            window.location.href = 'index.html?mode=darkMode';
-        }
-        else {
-            localStorage.setItem('mode', 'darkMode');
-            window.location.href = 'blog.html?mode=darkMode';
-        }
+
+    sunIcon.addEventListener('click', function (event) {
+        event.stopPropagation();
+        body.classList.remove('lightMode');
+        body.classList.add('darkMode');
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline-block';
+        localStorage.setItem('mode', 'darkMode');
+        currentMode = 'darkMode';
+
     });
 
 
-    moonIcon.addEventListener('click', () => {
-        if (window.location.href.includes('index')) {
-            //update mode and refer to correct url page for that mode
-            localStorage.setItem('mode', 'lightMode');
-            window.location.href = 'index.html?mode=lightMode';
-        }
-        else {
-            localStorage.setItem('mode', 'lightMode');
-            window.location.href = 'blog.html?mode=lightMode';
-        }
+    moonIcon.addEventListener('click', function (event) {
+        event.stopPropagation();
+        body.classList.remove('darkMode');
+        body.classList.add('lightMode');
+        sunIcon.style.display = 'inline-block';
+        moonIcon.style.display = 'none';
+        localStorage.setItem('mode', 'lightMode');
+        currentMode = 'lightMode';
     });
 
 });
