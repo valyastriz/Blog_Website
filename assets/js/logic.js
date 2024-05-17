@@ -7,30 +7,34 @@ document.addEventListener('DOMContentLoaded', function() {
     //check for current setting of light/dark
     let currentMode = localStorage.getItem('mode');
     //check if currentMode is empty and set to default
-    if(!currentMode) {
-        setLightMode();
-    }
-    if (currentMode === 'lightMode') {
-        setLightMode();
-    }
-    else if (currentMode === 'darkMode') {
-        setDarkMode();
-    }
-
-
-    sunIcon.addEventListener('click', function (event) {
-        event.stopPropagation();
-        setDarkMode();
-
-    });
-
+    
+    
+    checkMode ();
 
     moonIcon.addEventListener('click', function (event) {
         event.stopPropagation();
         setLightMode();
     });
 
+    sunIcon.addEventListener('click', function (event) {
+        event.stopPropagation();
+        setDarkMode();
 
+    });
+    
+    function checkMode () {
+        if(!currentMode) {
+            setLightMode();
+        }
+        if (currentMode === 'lightMode') {
+            setLightMode();
+        }
+        else if (currentMode === 'darkMode') {
+            setDarkMode();
+        }
+    
+
+    }
 
     function setLightMode () {
         body.classList.remove('darkMode');
