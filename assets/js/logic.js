@@ -8,44 +8,46 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentMode = localStorage.getItem('mode');
     //check if currentMode is empty and set to default
     if(!currentMode) {
-        localStorage.setItem('mode', 'lightMode');
-        currentMode = 'lightMode';
+        setLightMode();
     }
     if (currentMode === 'lightMode') {
-        body.classList.remove('darkMode');
-        body.classList.add('lightMode');
-        sunIcon.style.display = 'inline-block';
-        moonIcon.style.display = 'none';
+        setLightMode();
     }
     else if (currentMode === 'darkMode') {
-        body.classList.remove('lightMode');
-        body.classList.add('darkMode');
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'inline-block';
+        setDarkMode();
     }
 
 
     sunIcon.addEventListener('click', function (event) {
         event.stopPropagation();
-        body.classList.remove('lightMode');
-        body.classList.add('darkMode');
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'inline-block';
-        localStorage.setItem('mode', 'darkMode');
-        currentMode = 'darkMode';
+        setDarkMode();
 
     });
 
 
     moonIcon.addEventListener('click', function (event) {
         event.stopPropagation();
+        setLightMode();
+    });
+
+
+
+    function setLightMode () {
         body.classList.remove('darkMode');
         body.classList.add('lightMode');
         sunIcon.style.display = 'inline-block';
         moonIcon.style.display = 'none';
         localStorage.setItem('mode', 'lightMode');
         currentMode = 'lightMode';
-    });
+    }
 
+    function setDarkMode () {
+        body.classList.remove('lightMode');
+        body.classList.add('darkMode');
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline-block';
+        localStorage.setItem('mode', 'darkMode');
+        currentMode = 'darkMode';
+    }
 });
 
