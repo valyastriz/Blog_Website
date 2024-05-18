@@ -50,8 +50,7 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## Installation
 
-1. Clone the repository:
-   git clone https://github.com/yourusername/personal-blog.git
+1. Clone the repository: git clone https://github.com/valyastriz/Blog_Website.git
 2. Navigate to the project directory:
    cd personal-blog
 3. Open `index.html` in your web browser to view the landing page.
