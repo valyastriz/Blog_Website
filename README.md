@@ -68,10 +68,6 @@ THEN I am presented with a link to the developer's portfolio.
 ![Image of Form Page in Dark Mode](./assets/images/Form%20Page%20Dark%20Mode.png)
 ![Image of Blog Page in Dark Mode](./assets/images/Blog%20Page%20Dark%20Mode.png)
 
-## Contact
-
-For any inquiries or feedback, please reach out to [your email address].
-
 
 ## Acknowledgements
 
