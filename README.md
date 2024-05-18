@@ -55,22 +55,25 @@ THEN I am presented with a link to the developer's portfolio.
 2. Navigate to the project directory:
    cd personal-blog
 3. Open `index.html` in your web browser to view the landing page.
+4. Alternatively, you can visit the deployed site at [Blog Website](https://valyastriz.github.io/Blog_Website/)
 
 ## Usage
 
 1. On the landing page, fill out the form with your username, blog title, and blog content.
 2. Click the "Submit" button to save the blog post to localStorage and be redirected to the posts page.
-3. On the posts page, use the light/dark mode toggle to switch between themes.
+3. On the posts page, click on the Sun/Moon icons to toggle between light and dark themes.
 4. Click the "Back" button to return to the landing page and submit more blog entries.
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 
 For any inquiries or feedback, please reach out to [your email address].
+
+
+## Acknowledgements
+
+I would like to thank the following individuals and resources for their help and inspiration:
+
+- **Rene Trevino** - For helping with debugging and troubleshooting.
+- **ChatGPT** - For helping write this README.
+
