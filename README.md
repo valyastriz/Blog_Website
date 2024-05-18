@@ -63,7 +63,10 @@ THEN I am presented with a link to the developer's portfolio.
 2. Click the "Submit" button to save the blog post to localStorage and be redirected to the posts page.
 3. On the posts page, click on the Sun/Moon icons to toggle between light and dark themes.
 4. Click the "Back" button to return to the landing page and submit more blog entries.
-
+![Image of Form Page in Light Mode](./assets/images/Form%20Page%20Light%20Mode.png)
+![Image of Blog Page in Light Mode](./assets/images/Blog%20Page%20Light%20Mode.png)
+![Image of Form Page in Dark Mode](./assets/images/Form%20Page%20Dark%20Mode.png)
+![Image of Blog Page in Dark Mode](./assets/images/Blog%20Page%20Dark%20Mode.png)
 
 ## Contact
 
